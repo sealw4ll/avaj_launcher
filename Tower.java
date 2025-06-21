@@ -10,12 +10,12 @@ public class Tower {
 
     public void register(Flyable p_flyable){
         observers.add(p_flyable);
-        FileHandler.writeToFile("Tower says: " + p_flyable + "registered to weather tower.\n");
+        FileHandler.writeToFile("Tower says: " + p_flyable + " registered to weather tower.\n");
     }
 
     public void unregister(Flyable p_flyable){
         observers.remove(p_flyable);
-        FileHandler.writeToFile("Tower says: " + p_flyable + "unregistered to weather tower.\n");
+        FileHandler.writeToFile("Tower says: " + p_flyable + " unregistered to weather tower.\n");
     }
 
     protected void conditionChanged(){

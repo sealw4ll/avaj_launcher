@@ -18,6 +18,6 @@ public class Aircraft extends Flyable{
 
     @Override
     public String toString() {
-        return getClass() + "#" + name + "(" + id + ") "; 
+        return getClass().getSimpleName() + "#" + name + "(" + id + ")"; 
     }
 }
